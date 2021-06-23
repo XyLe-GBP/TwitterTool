@@ -67,29 +67,29 @@ A maximum of five accounts can be added. If you want to add more accounts, pleas
 
 ### Features of this application
 
-`Currentry version: 0.1.0000.612`
+`Currentry version: 1.1.0000.623`
 
 ※This application is still under development. There may be unexpected bugs or errors.
 
 If you find a bug, please contact me via [Issues](https://github.com/XyLe-GBP/TwitterTool/issues) or my [Twitter](https://twitter.com/X1LeP).
 
-* Ability to tweet, tweet with image, and tweet with video with the account registered in the application
-* Ability to retrieve and display up to 300 of your own timelines and home timelines.
+* Tweet, tweet with image, and tweet with video with the account registered in the application
+* Retrieve and display up to 300 of your own timelines and home timelines.
 
 ※Due to the limitations of the Twitter API, you cannot retrieve more than 300 at a time.
 
-* Ability to like, retweet, and reply to other users' tweets
+* Like, retweet, and reply to other users' tweets
 
 ※Excessive liking and retweeting via applications may result in your account being frozen.
 
-* Ability to search for tweets that contain specific keywords
-* Ability to display detailed information about a tweet
-* Ability to view user profiles
-* Ability to follow, block, and mute users
-* Ability to prevent users' retweets from being displayed
-* Ability to view which users are following you and which users are not following you (under development)
-* Ability to bulk block users who tweet specific keywords (under development)
-* Ability to tweet the song currently playing on your PC via #NowPlaying (under development)
+* Search for tweets that contain specific keywords
+* Display detailed information about a tweet
+* View user profiles
+* Follow, block, and mute users
+* Prevent users' retweets from being displayed
+* View which users are following you and which users are not following you
+* Bulk block users who tweet specific keywords
+* Tweet the song currently playing on your PC via #NowPlaying (under development)
 
 ---
 
