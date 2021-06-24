@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TwitTool": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
