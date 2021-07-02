@@ -34,16 +34,28 @@ To use this application, you will need the following token information:
 
   `CONSUMER_KEY (25 alpha-numeric characters)`
   
+  * Example: `X1ZhDKTcCeetWSdLo06l0tzQl`
+  
   `CONSUMER_SECRET (50 alpha-numeric characters)`
+  
+  * Example: `3KtHhx2Ry6B09ap7T7Wn7dr8sVb6rRs2Pnp7pP3ws79Q4LSKtc`
   
   `ACCESS_TOKEN (50 alpha-numeric characters)`
   
+  * Exapmle: `1146298479054077958-GJFJW8gD58N93pYrxoYlnepmzx2VEC`
+  
   `ACCESS_SECRET (45 alpha-numeric characters)`
+  
+  * Example: `vpi8SKhHI9YM4wEgsNxOtgXyNVaBUbXqiWogOdAGJw4SI`
   
 Also, Bearer Token is not necessarily required.
 (You can add it if you want).
   
   `BEARER_TOKEN (116 alpha-numeric characters)`
+  
+  * Example: `AAAAAAAAAAAAAAAAAAAAAAWXOQEAAAAA%2BbD9fGwFKceskKZuiFDWoLo%2BMa0%3DBTg5v5sTTuG78X4BpWmLtyYCrqghKfhb7RM7ownqB5Q0G8vXo4`
+  
+※This token is just an example and cannot be used in practice. If you use it, the Twitter API will return a '401 Unauthorized' error.
   
 The token can be set from the menu item `設定 > トークン設定`.
 
