@@ -79,7 +79,7 @@ A maximum of five accounts can be added. If you want to add more accounts, pleas
 
 ### Features of this application
 
-`Currentry version: 1.1.0000.623`
+`Currentry version: 0.2.2120.702`
 
 ※This application is still under development. There may be unexpected bugs or errors.
 
