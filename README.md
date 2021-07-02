@@ -105,6 +105,16 @@ If you find a bug, please contact me via [Issues](https://github.com/XyLe-GBP/Tw
 
 ---
 
+### Other tools/utilities used
+
+[CoreTweet](https://github.com/CoreTweet/CoreTweet) is used to core feature of the application.
+
+[NAudio](https://github.com/naudio/NAudio) is used to play the video audio of tweets.
+
+[OpenCVSharp](https://github.com/shimat/opencvsharp) is used to display the video of the tweet.
+
+---
+
 ### About Licensing
 
 <p>This tool is released under the MIT license.</p>
