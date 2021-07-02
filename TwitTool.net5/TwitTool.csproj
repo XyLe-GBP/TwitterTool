@@ -7,8 +7,8 @@
     <Product>TwitterTool</Product>
     <Company>XyLe</Company>
     <Authors>XyLe</Authors>
-    <AssemblyVersion>1.1.0000.623</AssemblyVersion>
-    <FileVersion>1.1.0000.623</FileVersion>
+    <AssemblyVersion>0.2.2120.702</AssemblyVersion>
+    <FileVersion>0.2.2120.702</FileVersion>
     <Description>A simple Twitter client.</Description>
     <Copyright>Copyright (C) 2021 - XyLe All Rights Reserved.</Copyright>
     <Version>0.1.0</Version>

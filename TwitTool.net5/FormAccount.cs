@@ -281,7 +281,7 @@ namespace TwitTool
                             ini.WriteString("ACCOUNT_5", "ID", "");
                             ini.WriteString("ACCOUNT_5", "ACCESS_TOKEN", "");
                             ini.WriteString("ACCOUNT_5", "ACCESS_SECRET", "");
-                            listView1.Items.Remove(listView1.SelectedItems[1]);
+                            listView1.Items.Remove(listView1.SelectedItems[0]);
                             break;
                         case 2:
                             ini.WriteString("ACCOUNT_3", "NAME", ini.GetString("ACCOUNT_4", "NAME"));
@@ -296,7 +296,7 @@ namespace TwitTool
                             ini.WriteString("ACCOUNT_5", "ID", "");
                             ini.WriteString("ACCOUNT_5", "ACCESS_TOKEN", "");
                             ini.WriteString("ACCOUNT_5", "ACCESS_SECRET", "");
-                            listView1.Items.Remove(listView1.SelectedItems[2]);
+                            listView1.Items.Remove(listView1.SelectedItems[0]);
                             break;
                         case 3:
                             ini.WriteString("ACCOUNT_4", "NAME", ini.GetString("ACCOUNT_5", "NAME"));
@@ -307,16 +307,17 @@ namespace TwitTool
                             ini.WriteString("ACCOUNT_5", "ID", "");
                             ini.WriteString("ACCOUNT_5", "ACCESS_TOKEN", "");
                             ini.WriteString("ACCOUNT_5", "ACCESS_SECRET", "");
-                            listView1.Items.Remove(listView1.SelectedItems[3]);
+                            listView1.Items.Remove(listView1.SelectedItems[0]);
                             break;
                         case 4:
                             ini.WriteString("ACCOUNT_5", "NAME", "");
                             ini.WriteString("ACCOUNT_5", "ID", "");
                             ini.WriteString("ACCOUNT_5", "ACCESS_TOKEN", "");
                             ini.WriteString("ACCOUNT_5", "ACCESS_SECRET", "");
-                            listView1.Items.Remove(listView1.SelectedItems[4]);
+                            listView1.Items.Remove(listView1.SelectedItems[0]);
                             break;
                         default:
+                            ini.WriteString("OTHERS", "CURRENT_ACCOUNT", "");
                             break;
                     }
                     MessageBox.Show(string.Format("アカウント {0} の削除が完了しました。", index + 1), "アカウント削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -367,6 +368,7 @@ namespace TwitTool
                         ini.WriteString("OTHERS", "CURRENT_ACCOUNT", "4");
                         break;
                     default:
+                        ini.WriteString("OTHERS", "CURRENT_ACCOUNT", "");
                         break;
                 }
                 MessageBox.Show(string.Format("アカウント {0} を現在のアカウントに設定しました。", index + 1), "完了", MessageBoxButtons.OK, MessageBoxIcon.Information);

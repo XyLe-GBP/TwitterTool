@@ -32,6 +32,7 @@ namespace TwitTool
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            Text = "TwitterTool for .NET 5 ( build: 2021.07.02-Beta )";
             var ini = new PrivateProfile.IniFile(@".\\settings.ini");
             if (!File.Exists(@".\\settings.ini"))
             {
@@ -370,28 +371,46 @@ namespace TwitTool
 
         private void Button_GetUserTimeline_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
-            listBox1.ClearSelected();
-            listBox1.Items.Clear();
-            var home = Utils.token.Statuses.UserTimeline(count => comboBox1.SelectedItem);
-            foreach (var status in home)
+            try
             {
-                textBox1.AppendText(status.Text.Replace("\n", "\r\n") + "\r\n\r\n" + status.CreatedAt.LocalDateTime + "[" + status.User.Name + "] ( @" + status.User.ScreenName + " )" + Environment.NewLine + "------------------------" + Environment.NewLine + Environment.NewLine);
+                textBox1.Clear();
+                listBox1.ClearSelected();
+                listBox1.Items.Clear();
+                var home = Utils.token.Statuses.UserTimeline(count => comboBox1.SelectedItem);
+                foreach (var status in home)
+                {
+                    textBox1.AppendText(status.Text.Replace("\n", "\r\n") + "\r\n\r\n" + status.CreatedAt.LocalDateTime + "[" + status.User.Name + "] ( @" + status.User.ScreenName + " )" + Environment.NewLine + "------------------------" + Environment.NewLine + Environment.NewLine);
+                }
+                return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "予期せぬエラーが発生しました。\r\n\r\n" + ex.ToString(), "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
 
         private void Button_GetHomeTimeline_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
-            listBox1.ClearSelected();
-            listBox1.Items.Clear();
-            Utils.GetStatuses(int.Parse(comboBox1.SelectedItem.ToString()));
-            
-            var home = Utils.stat;
-            foreach (var status in home)
+            try
             {
-                textBox1.AppendText(status.Text.Replace("\n", "\r\n") + "\r\n\r\n" + status.CreatedAt.LocalDateTime + " [" + status.User.Name + "] ( @" + status.User.ScreenName + " )" + Environment.NewLine + "------------------------" + Environment.NewLine + Environment.NewLine);
-                listBox1.Items.Add(status.Text);
+                textBox1.Clear();
+                listBox1.ClearSelected();
+                listBox1.Items.Clear();
+                Utils.GetStatuses(int.Parse(comboBox1.SelectedItem.ToString()));
+
+                var home = Utils.stat;
+                foreach (var status in home)
+                {
+                    textBox1.AppendText(status.Text.Replace("\n", "\r\n") + "\r\n\r\n" + status.CreatedAt.LocalDateTime + " [" + status.User.Name + "] ( @" + status.User.ScreenName + " )" + Environment.NewLine + "------------------------" + Environment.NewLine + Environment.NewLine);
+                    listBox1.Items.Add(status.Text);
+                }
+                return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "予期せぬエラーが発生しました。\r\n\r\n" + ex.ToString(), "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
 

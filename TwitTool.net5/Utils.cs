@@ -17,12 +17,12 @@ namespace TwitTool
     class Utils
     {
         private static readonly IniFile ini = new(@".\\settings.ini");
-
-        public static readonly string API_KEY = ini.GetString("TOKENS", "CONSUMER_KEY", ""); //"X1ZhDKTcCeetWSdLo06l0tzQl";
-        public static readonly string API_SECRET = ini.GetString("TOKENS", "CONSUMER_SECRET", ""); //"3KtHhx2Ry6B09ap7T7Wn7dr8sVb6rRs2Pnp7pP3ws79Q4LSKtc";
-        public static readonly string ACCESS_TOKEN = ini.GetString("TOKENS", "ACCESS_TOKEN", ""); //"1146298479054077958-GJFJW8gD58N93pYrxoYlnepmzx2VEC";
-        public static readonly string ACCESS_SECRET = ini.GetString("TOKENS", "ACCESS_SECRET", ""); //"vpi8SKhHI9YM4wEgsNxOtgXyNVaBUbXqiWogOdAGJw4SI";
-        public static readonly string BEARER_TOKEN = ini.GetString("TOKENS", "BEARER_TOKEN", ""); //"AAAAAAAAAAAAAAAAAAAAAAWXOQEAAAAA%2BbD9fGwFKceskKZuiFDWoLo%2BMa0%3DBTg5v5sTTuG78X4BpWmLtyYCrqghKfhb7RM7ownqB5Q0G8vXo4";
+		
+        public static readonly string API_KEY = ini.GetString("TOKENS", "CONSUMER_KEY", "");
+        public static readonly string API_SECRET = ini.GetString("TOKENS", "CONSUMER_SECRET", "");
+        public static readonly string ACCESS_TOKEN = ini.GetString("TOKENS", "ACCESS_TOKEN", "");
+        public static readonly string ACCESS_SECRET = ini.GetString("TOKENS", "ACCESS_SECRET", "");
+        public static readonly string BEARER_TOKEN = ini.GetString("TOKENS", "BEARER_TOKEN", "");
 
         /// <summary>
         /// トークン格納用変数
