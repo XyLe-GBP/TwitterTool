@@ -6,7 +6,7 @@ A simple Twitter client.
 
 ## Download
 
-[Release](https://github.com/XyLe-GBP/TwitterTool/Releases)
+[Release](https://github.com/XyLe-GBP/TwitterTool/releases)
 
 ---
 
