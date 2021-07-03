@@ -1,4 +1,5 @@
 # TwitterTool
+![Downloads](https://img.shields.io/github/downloads/XyLe-GBP/TwitterTool/total.svg)
 
 A simple Twitter client.
 
